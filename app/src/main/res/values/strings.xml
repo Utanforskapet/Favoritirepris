@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Studentfiket</string>
+    <string name="title_section1">Kaffekort </string>
+    <string name="title_section2">Öppettider</string>
+    <string name="title_section3">Hitta hit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kaffe_kort">KaffeKort</string>
+    <string name="title_activity_hitta_hit">HittaHit</string>
+    <string name="title_activity_helvete_kaffe">HelveteKaffe</string>
+
+</resources>
