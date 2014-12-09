@@ -59,19 +59,27 @@ public class MyActivity extends Activity
 
     public void onSectionAttached(int number) {
         switch (number) {
+
             case 1:
                 mTitle = getString(R.string.title_section1);
-
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
-                Intent intent1 = new Intent(this, HelveteKaffe.class);
-                startActivity(intent1);
+                Intent intent2 = new Intent(this, HelveteKaffe.class);
+                startActivity(intent2);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
-                Intent intent2 = new Intent(this, HittaHit.class);
-                startActivity(intent2);
+                mTitle = getString(R.string.title_section3); // Öppettider
+                Intent intent3 = new Intent(this, Oppettider.class);
+                startActivity(intent3);
+            case 4:
+                mTitle = getString(R.string.title_section4); // Hitta hit
+                Intent intent4 = new Intent(this, HittaHit.class);
+                startActivity(intent4);
+            case 5:
+                mTitle = getString(R.string.title_section5); // Kontankt
+                Intent intent5 = new Intent(this, Kontakt.class);
+                startActivity(intent5);
                 break;
         }
     }

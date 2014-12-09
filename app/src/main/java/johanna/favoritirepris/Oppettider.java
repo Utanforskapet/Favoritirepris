@@ -20,7 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
-public class HittaHit extends Activity
+public class Oppettider extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     /**
@@ -36,7 +36,7 @@ public class HittaHit extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hitta_hit);
+        setContentView(R.layout.activity_oppettider);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -68,12 +68,12 @@ public class HittaHit extends Activity
                 startActivity(intent2);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
-                Intent intent3 = new Intent(this, Oppettider.class);
-                startActivity(intent3);
+                mTitle = getString(R.string.title_section3); // Öppettider
+
             case 4:
                 mTitle = getString(R.string.title_section4); // Hitta hit
-
+                Intent intent4 = new Intent(this, HittaHit.class);
+                startActivity(intent4);
             case 5:
                 mTitle = getString(R.string.title_section5); // Kontankt
                 break;
@@ -94,7 +94,7 @@ public class HittaHit extends Activity
             // Only show items in the action bar relevant to this screen
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
-            getMenuInflater().inflate(R.menu.hitta_hit, menu);
+            getMenuInflater().inflate(R.menu.oppettider, menu);
             restoreActionBar();
             return true;
         }
@@ -141,14 +141,14 @@ public class HittaHit extends Activity
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_hitta_hit, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_oppettider, container, false);
             return rootView;
         }
 
         @Override
         public void onAttach(Activity activity) {
             super.onAttach(activity);
-            ((HittaHit) activity).onSectionAttached(
+            ((Oppettider) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
