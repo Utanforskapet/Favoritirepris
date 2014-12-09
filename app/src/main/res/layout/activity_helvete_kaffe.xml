@@ -23,12 +23,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/kaffe"
-                android:layout_marginLeft="17dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="65dp"
+                android:layout_marginTop="35dp"
                 android:layout_gravity="center_horizontal|top" />
 
             <Button
@@ -58,7 +58,8 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/kaffe"
                 android:layout_below="@+id/imageButton1"
-                android:layout_alignStart="@+id/imageButton1" />
+                android:layout_alignStart="@+id/imageButton1"
+                android:layout_alignLeft="@+id/imageButton1"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -67,7 +68,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/kaffe"
                 android:layout_below="@+id/imageButton1"
-                android:layout_toEndOf="@+id/imageButton4" />
+                android:layout_toEndOf="@+id/imageButton4"
+                android:layout_toRightOf="@+id/imageButton4"
+                />
 
             <Button
                 android:layout_width="wrap_content"
@@ -77,7 +80,9 @@
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/kaffe"
                 android:layout_below="@+id/imageButton2"
-                android:layout_toEndOf="@+id/imageButton5" />
+                android:layout_toEndOf="@+id/imageButton5"
+                android:layout_toRightOf="@+id/imageButton5"
+                />
 
             <Button
                 android:layout_width="wrap_content"
@@ -87,7 +92,8 @@
                 android:layout_marginRight="10dp"
                 android:background="@drawable/kaffe"
                 android:layout_below="@+id/imageButton4"
-                android:layout_alignStart="@+id/imageButton4" />
+                android:layout_alignStart="@+id/imageButton4"
+                android:layout_alignLeft="@+id/imageButton4"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -96,7 +102,8 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/kaffe"
                 android:layout_below="@+id/imageButton4"
-                android:layout_toEndOf="@+id/imageButton7" />
+                android:layout_toEndOf="@+id/imageButton7"
+                android:layout_toRightOf="@+id/imageButton7"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -106,7 +113,8 @@
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/kaffe"
                 android:layout_alignBottom="@+id/imageButton8"
-                android:layout_toEndOf="@+id/imageButton8" />
+                android:layout_toEndOf="@+id/imageButton8"
+                android:layout_toRightOf="@+id/imageButton8"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -115,6 +123,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_toStartOf="@+id/imageButton8"
+                android:layout_toLeftOf="@+id/imageButton8"
                 android:background="@drawable/kaffe"
                 android:layout_below="@+id/imageButton7" />
 
@@ -124,6 +133,7 @@
                 android:id="@+id/imageButton11"
                 android:layout_marginTop="10dp"
                 android:layout_toStartOf="@+id/imageButton9"
+                android:layout_toLeftOf="@+id/imageButton9"
                 android:background="@drawable/kaffe"
                 android:layout_below="@+id/imageButton8" />
 
