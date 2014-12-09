@@ -77,8 +77,6 @@ public class Kontakt extends Activity
                 startActivity(intent4);
             case 5:
                 mTitle = getString(R.string.title_section5); // Kontankt
-                Intent intent5 = new Intent(this, Kontakt.class);
-                startActivity(intent5);
                 break;
         }
     }

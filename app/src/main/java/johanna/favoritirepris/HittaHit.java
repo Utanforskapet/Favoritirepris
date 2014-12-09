@@ -73,8 +73,6 @@ public class HittaHit extends Activity
                 startActivity(intent3);
             case 4:
                 mTitle = getString(R.string.title_section4); // Hitta hit
-                Intent intent4 = new Intent(this, HittaHit.class);
-                startActivity(intent4);
             case 5:
                 mTitle = getString(R.string.title_section5); // Kontankt
                 Intent intent5 = new Intent(this, Kontakt.class);

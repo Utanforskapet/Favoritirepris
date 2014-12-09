@@ -17,10 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".KaffeKort"
-            android:label="@string/title_activity_kaffe_kort" >
-        </activity>
-        <activity
             android:name=".HittaHit"
             android:label="@string/title_activity_hitta_hit" >
         </activity>

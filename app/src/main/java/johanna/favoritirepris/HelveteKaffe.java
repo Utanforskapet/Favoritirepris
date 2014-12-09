@@ -476,8 +476,6 @@ public class HelveteKaffe extends Activity
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
-                Intent intent2 = new Intent(this, HelveteKaffe.class);
-                startActivity(intent2);
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3); // Öppettider
