@@ -71,8 +71,10 @@ public class HittaHit extends Activity
                 mTitle = getString(R.string.title_section3); // Öppettider
                 Intent intent3 = new Intent(this, Oppettider.class);
                 startActivity(intent3);
+                break;
             case 4:
                 mTitle = getString(R.string.title_section4); // Hitta hit
+                break;
             case 5:
                 mTitle = getString(R.string.title_section5); // Kontankt
                 Intent intent5 = new Intent(this, Kontakt.class);

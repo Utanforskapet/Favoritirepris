@@ -68,7 +68,7 @@ public class HelveteKaffe extends Activity
                     AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -103,7 +103,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -139,7 +139,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -173,7 +173,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -206,7 +206,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -239,7 +239,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -272,7 +272,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -305,7 +305,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -338,7 +338,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -371,7 +371,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -404,7 +404,7 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa kaffe?")
+                            .setMessage("Vill du köpa en varmdryck?")
                             .setCancelable(false)
                             .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
@@ -481,10 +481,12 @@ public class HelveteKaffe extends Activity
                 mTitle = getString(R.string.title_section3); // Öppettider
                 Intent intent3 = new Intent(this, Oppettider.class);
                 startActivity(intent3);
+                break;
             case 4:
                 mTitle = getString(R.string.title_section4); // Hitta hit
                 Intent intent4 = new Intent(this, HittaHit.class);
                 startActivity(intent4);
+                break;
             case 5:
                 mTitle = getString(R.string.title_section5); // Kontankt
                 Intent intent5 = new Intent(this, Kontakt.class);
