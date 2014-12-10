@@ -139,7 +139,17 @@
                 android:background="@drawable/selector"
                 android:layout_below="@+id/imageButton8" />
 
-
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton12"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/infotryck"
+                android:layout_alignBottom="@+id/imageButton11"
+                android:layout_below="@+id/imageButton9"
+                android:layout_alignRight="@+id/imageButton9"
+                android:layout_toRightOf="@+id/imageButton11" />
 
         </RelativeLayout>
 
