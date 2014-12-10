@@ -61,7 +61,6 @@ public class MyActivity extends Activity
         switch (number) {
 
             case 1:
-                mTitle = getString(R.string.title_section1);
                 break;
             case 2:
 
