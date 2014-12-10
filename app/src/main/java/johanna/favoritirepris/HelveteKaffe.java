@@ -429,9 +429,6 @@ public class HelveteKaffe extends Activity
 
                 }
 
-
-
-
                 if(v.getId() == R.id.imageButton12)
                 {
                     //Dialogruta
