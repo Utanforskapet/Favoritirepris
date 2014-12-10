@@ -429,36 +429,19 @@ public class HelveteKaffe extends Activity
 
                 }
 
-
-
-
                 if(v.getId() == R.id.imageButton12)
                 {
                     //Dialogruta
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
-                    //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
+                    AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+                    alertDialog.setTitle("Information");
 
-                    alertDialogBuilder
-                            .setMessage("Information?")
-                            .setCancelable(false)
-                            .setPositiveButton("Ok",new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog,int id) {
-                                    // if this button is clicked, close
-                                    // MainCoffee.this.finish();
-                                    dialog.cancel();
-                                }
-                            })
-                            .setNegativeButton("Ja",new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog,int id) {
-                                    // if this button is clicked, just close
-                                    // the dialog box and do nothing
-                                    imageButton11.setOnClickListener(null);
-                                    imageButton11.setBackgroundResource(R.drawable.kaffenej);
-                                    dialog.cancel();
-                                }
-                            });
-                    // create alert dialog
-                    AlertDialog alertDialog = alertDialogBuilder.create();
+                    alertDialog.setMessage("Varm dryck:\nKaffe\nThe\nO'boy ");
+                    alertDialog.setButton("Ok", new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int which){
+
+                        }
+                    });
 
                     // show it
                     alertDialog.show();
