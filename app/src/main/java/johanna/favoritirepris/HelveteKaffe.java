@@ -39,7 +39,7 @@ public class HelveteKaffe extends Activity
     Button imageButton1, imageButton2, imageButton3,
     imageButton4, imageButton5, imageButton6,
     imageButton7, imageButton8, imageButton9,
-    imageButton10, imageButton11;
+    imageButton10, imageButton11, imageButton12;
 
     final Context context = this;
 
@@ -428,6 +428,40 @@ public class HelveteKaffe extends Activity
                     alertDialog.show();
 
                 }
+
+
+                if(v.getId() == R.id.imageButton12)
+                {
+                    //Dialogruta
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+                    //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
+
+                    alertDialogBuilder
+                            .setMessage("Vill du köpa en varm dryck?")
+                            .setCancelable(false)
+                            .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,int id) {
+                                    // if this button is clicked, close
+                                    // MainCoffee.this.finish();
+                                    dialog.cancel();
+                                }
+                            })
+                            .setNegativeButton("Ja",new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,int id) {
+                                    // if this button is clicked, just close
+                                    // the dialog box and do nothing
+                                    imageButton11.setOnClickListener(null);
+                                    imageButton11.setBackgroundResource(R.drawable.kaffenej);
+                                    dialog.cancel();
+                                }
+                            });
+                    // create alert dialog
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+
+                    // show it
+                    alertDialog.show();
+
+                }
             }
         };
 
@@ -443,6 +477,7 @@ public class HelveteKaffe extends Activity
         imageButton9 = (Button) findViewById(R.id.imageButton9);
         imageButton10 = (Button) findViewById(R.id.imageButton10);
         imageButton11 = (Button) findViewById(R.id.imageButton11);
+        imageButton12 = (Button) findViewById(R.id.imageButton12);
 
 
         imageButton1.setOnClickListener(buttonListener);
@@ -457,6 +492,7 @@ public class HelveteKaffe extends Activity
         imageButton9.setOnClickListener(buttonListener);
         imageButton10.setOnClickListener(buttonListener);
         imageButton11.setOnClickListener(buttonListener);
+        imageButton12.setOnClickListener(buttonListener);
     }
 
     @Override
