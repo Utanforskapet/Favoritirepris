@@ -79,7 +79,6 @@ public class HelveteKaffe extends Activity
                             })
                             .setNegativeButton("Ja",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
-
                                     imageButton1.setOnClickListener(null);
                                     imageButton1.setBackgroundResource(R.drawable.kaffenej);
                                     dialog.cancel();
@@ -115,6 +114,7 @@ public class HelveteKaffe extends Activity
                                         public void onClick(DialogInterface dialog,int id) {
                                             // if this button is clicked, just close
                                             // the dialog box and do nothing
+
                                             imageButton2.setOnClickListener(null);
                                             imageButton2.setBackgroundResource(R.drawable.kaffenej);
                                             dialog.cancel();
@@ -428,7 +428,8 @@ public class HelveteKaffe extends Activity
                     alertDialog.show();
 
                 }
-            }
+
+                }
         };
 
         imageButton1 = (Button) findViewById(R.id.imageButton1);
