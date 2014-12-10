@@ -437,9 +437,9 @@ public class HelveteKaffe extends Activity
                     //alertDialogBuilder.setTitle("Är du helt hundra på detta?");
 
                     alertDialogBuilder
-                            .setMessage("Vill du köpa en varm dryck?")
+                            .setMessage("Information?")
                             .setCancelable(false)
-                            .setPositiveButton("Nej",new DialogInterface.OnClickListener() {
+                            .setPositiveButton("Ok",new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,int id) {
                                     // if this button is clicked, close
                                     // MainCoffee.this.finish();
